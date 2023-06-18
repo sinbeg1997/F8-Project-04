@@ -42,7 +42,7 @@ a {
 .btn {
   --height: 56px;
   display: inline-block;
-  min-width: 182px;
+  min-width: 130px;
   height: var(--height);
   font-weight: 600;
   font-size: 1.4rem;
@@ -53,6 +53,9 @@ a {
   border-radius: 99px;
 }
 
+.btn:hover {
+  opacity: 0.9;
+}
 /* Header */
 
 .header {
@@ -79,15 +82,11 @@ a {
 
 .navbar__list {
   display: flex;
-  align-items: center;
-}
-
-.navbar__item {
-  padding: 4px 18px;
 }
 
 .navbar__link,
-.header__btn-signin {
+.header-action__link {
+  padding: 8px 18px;
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 1;
@@ -99,8 +98,7 @@ a {
   text-shadow: 1px 0 0 currentColor;
 }
 
-.header__btn-signup {
+.header-action__btn {
   --height: 50px;
   min-width: 118px;
-  margin-left: 18px;
 }
