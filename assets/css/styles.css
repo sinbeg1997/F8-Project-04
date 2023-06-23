@@ -83,6 +83,21 @@ a {
   box-shadow: 4px 3px 10px -1px rgba(191, 41, 0, 0.4);
 }
 
+.section-heading {
+  color: #000958;
+  font-size: 5.2rem;
+  font-family: Sora, sans-serif;
+  font-weight: 700;
+  line-height: 1.19;
+}
+
+.section-desc {
+  color: #656689;
+  font-size: 1.6rem;
+  font-family: Poppins, sans-serif;
+  line-height: 1.875;
+}
+
 /* Header */
 
 .header {
@@ -282,4 +297,77 @@ a {
   line-height: 1;
   text-decoration: underline;
   color: #000958;
+}
+
+/* About */
+
+.about {
+  margin-top: 207px;
+}
+
+.about__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-label {
+  color: #5e6085;
+  font-size: 1.6rem;
+  font-family: Sora, sans-serif;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.about-heading,
+.about-desc {
+  max-width: 444px;
+}
+
+.about-heading {
+  margin-top: 15px;
+}
+
+.about-desc {
+  margin-top: 24px;
+}
+
+.about__checklist {
+  margin-top: 54px;
+  display: grid;
+  gap: 36px;
+  grid-template-columns: auto auto;
+  justify-content: flex-start;
+}
+
+.about__checklist-item {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  position: relative;
+  color: #48496a;
+  font-size: 1.8rem;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.about__checklist-item::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: #ff5d31;
+}
+
+.about__checklist-item::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  width: 15px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-image: url(../icons/check.svg);
 }
