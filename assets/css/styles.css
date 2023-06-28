@@ -492,16 +492,17 @@ a {
 .tab__list {
   display: flex;
   position: relative;
+  column-gap: 56px;
 }
 
 .tab__list::after,
 .tab__item::after,
-.about__bottom-more::before {
+.tab__content-more::before {
   content: "";
   position: absolute;
   left: 0;
+  right: 0;
   bottom: 0;
-  width: 100%;
   display: block;
   height: 2px;
   border-radius: 1px;
@@ -514,6 +515,7 @@ a {
   position: relative;
   align-items: center;
   padding-bottom: 10px;
+  cursor: pointer;
 }
 
 .tab__item-active::after {
@@ -521,15 +523,11 @@ a {
   opacity: 1;
 }
 
-.tab__item + .tab__item {
-  margin-left: 56px;
-}
-
-.tab__item-icon {
+.tab__icon {
   width: 18px;
 }
 
-.tab__item-title {
+.tab__title {
   margin-left: 10px;
   color: #48496a;
   font-size: 1.8rem;
@@ -544,17 +542,21 @@ a {
 
 .tab__content-item {
   display: none;
-  max-width: 391px;
-  color: #656689;
-  font-size: 1.4rem;
-  line-height: 1.714;
 }
 
 .tab__content-item-active {
   display: block;
 }
 
-.about__bottom-more {
+.tab__content-desc {
+  display: none;
+  max-width: 391px;
+  color: #656689;
+  font-size: 1.4rem;
+  line-height: 1.714;
+}
+
+.tab__content-more {
   position: relative;
   margin-top: 32px;
   display: inline-block;
@@ -565,9 +567,7 @@ a {
   padding-bottom: 5px;
 }
 
-.about__bottom-more::before {
+.tab__content-more::before {
   opacity: 1;
-  border-radius: 1px;
-  display: inline-block;
-  bottom: 0;
+  height: 1.5px;
 }
