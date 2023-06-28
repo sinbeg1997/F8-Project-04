@@ -490,7 +490,7 @@ a {
 }
 
 .tab__list {
-  display: flex;
+  display: inline-flex;
   position: relative;
   column-gap: 56px;
 }
