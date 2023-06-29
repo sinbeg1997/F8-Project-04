@@ -574,14 +574,16 @@ a {
 
 /* Service */
 .service {
-  margin-top: 220px;
+  margin-top: 190px;
+  background: #fff6ed;
+  padding: 68px 0 100px;
 }
 
-.service-top {
+.service__top {
   text-align: center;
 }
 
-.service-top__desc {
+.service__desc {
   color: #5e6085;
   font-size: 1.6rem;
   font-family: Sora, sans-serif;
@@ -590,13 +592,13 @@ a {
   margin-bottom: 15px;
 }
 
-.service-body {
+.service__body {
   margin-top: 71px;
   display: grid;
   grid-template-columns: auto 1fr auto;
 }
 
-.service-card {
+.service-item {
   width: 294px;
   padding: 30px 28px;
   border-radius: 10px;
@@ -604,11 +606,11 @@ a {
   background: #fff;
 }
 
-.service-card + .service-card {
+.service-item + .service-item {
   margin-top: 24px;
 }
 
-.service-card__title {
+.service-item__title {
   color: #000958;
   font-size: 2.2rem;
   font-family: Sora, sans-serif;
@@ -616,14 +618,14 @@ a {
   line-height: 1;
 }
 
-.service-card__desc {
+.service-item__desc {
   margin-top: 18px;
   color: #656689;
   font-size: 1.4rem;
   line-height: 1.714;
 }
 
-.service-card__more {
+.service-item__more {
   display: inline-flex;
   margin-top: 24px;
   color: #34396a;
@@ -632,7 +634,7 @@ a {
   line-height: 1;
 }
 
-.service-card__more::after {
+.service-item__more::after {
   content: url(../icons/arrow-up-right.svg);
-  margin-left: 6px;
+  margin: 1px 0 0 5px;
 }
