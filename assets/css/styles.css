@@ -610,12 +610,23 @@ a {
   margin-top: 24px;
 }
 
-.service-item__title {
+.service-item__heading {
+  position: relative;
+  padding-left: 12px;
   color: #000958;
   font-size: 2.2rem;
   font-family: Sora, sans-serif;
   font-weight: 600;
   line-height: 1;
+}
+
+.service-item__heading::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #ff5b2e 0%, #ffa187 100%);
+  border-radius: 1px;
 }
 
 .service-item__desc {
