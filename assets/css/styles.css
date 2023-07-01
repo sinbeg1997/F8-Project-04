@@ -639,7 +639,8 @@ a {
   margin: 1px 0 0 5px;
 }
 
-.service__img-wrap {
+.service__media {
+  margin-top: 18px;
   position: relative;
   margin-left: 64px;
   margin-right: 71px;
@@ -653,11 +654,10 @@ a {
   object-fit: cover;
 }
 
-.service__img-wrap::after {
+.service__media::after {
   position: absolute;
   bottom: 0;
   content: "";
-  display: block;
   left: 22px;
   right: 15px;
   height: 350px;
@@ -671,11 +671,10 @@ a {
   justify-content: center;
 }
 
-.service__cta-btn {
+.service__cta {
   min-width: 214px;
-  border: 1px solid #ff5b2e;
+  border: 1px solid currentColor;
   color: #ff5b2e;
-  text-align: center;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1;
