@@ -638,3 +638,45 @@ a {
   content: url(../icons/arrow-up-right.svg);
   margin: 1px 0 0 5px;
 }
+
+.service__img-wrap {
+  position: relative;
+  margin-left: 64px;
+  margin-right: 71px;
+}
+
+.service__img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  object-fit: cover;
+}
+
+.service__img-wrap::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 22px;
+  right: 15px;
+  height: 350px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #9df1fb 0%, #73d0db 100%);
+}
+
+.service__cta-wrap {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+}
+
+.service__cta-btn {
+  min-width: 214px;
+  border: 1px solid #ff5b2e;
+  color: #ff5b2e;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1;
+}
