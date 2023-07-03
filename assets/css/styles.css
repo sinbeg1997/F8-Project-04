@@ -583,7 +583,8 @@ a {
   text-align: center;
 }
 
-.service__desc {
+.service__desc,
+.staff__desc {
   color: #5e6085;
   font-size: 1.6rem;
   font-family: Sora, sans-serif;
@@ -688,5 +689,73 @@ a {
   color: #ff5b2e;
   font-size: 1.6rem;
   font-weight: 500;
+  line-height: 1;
+}
+
+/* Staff */
+
+.staff {
+  padding: 130px 0;
+}
+
+.staff__desc,
+.staff__heading {
+  text-align: center;
+}
+
+.staff__heading {
+  margin-top: 15px;
+}
+
+.staff__list {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+}
+
+.staff__item-img-wrap {
+  position: relative;
+  border-radius: 130px;
+  margin: 0 8px;
+}
+
+.staff__item-img-wrap::before {
+  position: absolute;
+  content: "";
+  border-radius: 130px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 266px;
+  background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+}
+
+.staff__item-img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  border-radius: inherit;
+  display: block;
+}
+
+.staff__item-desc,
+.staff__item-name {
+  text-align: center;
+}
+
+.staff__item-desc {
+  margin-top: 34px;
+  color: #656689;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.staff__item-name {
+  margin-top: 14px;
+  color: #000958;
+  font-size: 2.2rem;
+  font-family: Sora, sans-serif;
+  font-weight: 600;
   line-height: 1;
 }
