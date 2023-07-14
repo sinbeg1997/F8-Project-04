@@ -822,6 +822,10 @@ a {
   background: #fff6ed;
 }
 
+.pricing-container {
+  width: 994px;
+}
+
 .pricing__heading,
 .pricing__desc {
   text-align: center;
