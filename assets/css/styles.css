@@ -970,3 +970,127 @@ a {
 .pricing__desc-item::before {
   content: url(../icons/pricing-check.svg);
 }
+
+/* Review */
+
+.review {
+  padding: 104px 0 52px;
+}
+
+.review__inner {
+  display: flex;
+  align-items: center;
+  column-gap: 44px;
+}
+
+.review__control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 1.5px solid #ffd1c4;
+  color: #ff5b2e;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.review__control:hover {
+  background-color: #ff5b2e;
+  color: #fff;
+  border-color: #ff5b2e;
+}
+
+.review__content {
+  overflow: hidden;
+}
+
+.review-list {
+  display: flex;
+}
+
+.review-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.review-item__media {
+  position: relative;
+  width: 274px;
+  flex-shrink: 0;
+  border-radius: 137px;
+  margin-top: -52px;
+}
+
+.review-item__img {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  border-radius: inherit;
+  display: block;
+}
+
+.review-item__media::before {
+  position: absolute;
+  content: "";
+  inset: auto 0 0 0;
+  height: 82%;
+  background: #ffda54;
+  border-radius: inherit;
+}
+
+.review-item__content {
+  margin-left: 115px;
+  max-width: 553px;
+  margin-top: 28px;
+}
+
+.review-item__quote {
+  margin-top: 24px;
+  font-size: 1.8rem;
+  line-height: 1.55;
+}
+
+.review-item__author {
+  display: flex;
+  align-items: center;
+  margin-top: 34px;
+  color: #282828;
+  font-family: Sora, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.review-item__author::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: #000;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.review__dots {
+  margin-top: 56px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.review__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  border: 1px solid #ff5b2e;
+}
+
+.review__dot-active {
+  width: 24px;
+  background-color: #ff5b2e;
+}
